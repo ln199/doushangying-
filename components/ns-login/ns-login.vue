@@ -140,9 +140,12 @@ export default {
 			if (!uni.getStorageSync('loginLock')) {
 				// #ifdef MP
 				if (e.detail.errMsg == 'getUserInfo:ok') {
+					let basicUserInfo = e.detail.userInfo;
+					this.authInfo.nickName = basicUserInfo.nickName;
+					this.authInfo.avatarUrl = basicUserInfo.avatarUrl;
 					this.getCode(data => {
 						if (data) {
-							this.authLogin(data);
+							this.authLogin(Object.assign(data,basicUserInfo));
 						} else {
 							this.$refs.auth.close();
 							this.toLogin();

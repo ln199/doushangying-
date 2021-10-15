@@ -9,7 +9,7 @@ export default {
 		 * 获取用户登录凭证code
 		 */
 		getCode(callback) {
-			this.getUserInfo();
+			// this.getUserInfo();
 			// 微信小程序
 			// #ifdef MP-WEIXIN
 			uni.login({
