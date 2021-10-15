@@ -1,0 +1,37 @@
+export const lang = {
+	//title为每个页面的标题
+	title: '会员中心',
+	login: '立即登录',
+	loginTpis: '登录体验更多功能',
+	memberLevel: '会员等级',
+	moreAuthority: '更多权限',
+	allOrders: '全部订单',
+	seeAllOrders: '查看全部订单',
+	waitPay: '待付款',
+	readyDelivery: '待发货',
+	waitDelivery: '待收货',
+	waitEvaluate: '待评价',
+	refunding: '退款',
+	// 会员中心入口
+	sign: '签到',
+	personInfo: '个人资料',
+	receivingAddress: '收货地址',
+	accountList: '账户列表',
+	couponList: '优惠券',
+	mySpellList: '我的拼单',
+	myBargain: '我的砍价',
+	virtualCode: '虚拟码',
+	winningRecord: '我的礼品',
+	myCollection: '我的关注',
+	myTracks: '我的足迹',
+	pintuanOrder: '拼团订单',
+	yushouOrder: '预售订单',
+	verification: '核销台',
+	message: '我的消息',
+	exchangeOrder: '积分兑换',
+	// 推广中心
+	balance: '余额',
+	point: '积分',
+	coupon: '优惠券',
+	Service:"客服"
+}

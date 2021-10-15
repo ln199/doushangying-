@@ -1,0 +1,1101 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+		},
+
+		//******************登录模块（3）******************
+		{
+			"path": "pages/login/login/login",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom",
+				// #endif
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/login/register/register",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom",
+				// #endif
+				"navigationBarTitleText": "注册"
+			}
+		},
+
+		//******************商品模块（11）******************
+		{
+			"path": "pages/goods/cart/cart",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom",
+				// #endif
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "pages/goods/category/category",
+			"style": {
+				"disableScroll": true,
+				// #ifdef H5
+				"navigationStyle": "custom",
+				// #endif
+				"navigationBarTitleText": "商品分类"
+			}
+		},
+
+		// 商品详情、限时折扣、预售
+		{
+			"path": "pages/goods/detail/detail",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom",
+				// #endif
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/goods/list/list",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom",
+				// #endif
+				"navigationBarTitleText": "商品列表"
+			}
+		},
+
+		//******************会员模块（20）******************
+		{
+			"path": "pages/member/index/index",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom",
+				// #endif
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "会员中心"
+			}
+		},
+		{
+			"path": "pages/member/info/info",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom",
+				// #endif
+				"navigationBarTitleText": "个人资料"
+			}
+		},
+		//******************订单模块（12）******************
+		{
+			"path": "pages/order/payment/payment",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom"
+				// #endif
+			}
+		},
+		{
+			"path": "pages/order/list/list",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom"
+				// #endif
+			}
+		},
+		{
+			"path": "pages/order/detail/detail",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom",
+				// #endif
+				"enablePullDownRefresh": true
+			}
+		},
+		// 本地配送订单详情
+		{
+			"path": "pages/order/detail_local_delivery/detail_local_delivery",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom"
+				// #endif
+			}
+		},
+		// 自提订单详情
+		{
+			"path": "pages/order/detail_pickup/detail_pickup",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom"
+				// #endif
+			}
+		},
+		// 虚拟订单详情
+		{
+			"path": "pages/order/detail_virtual/detail_virtual",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom"
+				// #endif
+			}
+		},
+		{
+			"path": "pages/order/logistics/logistics",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom"
+				// #endif
+			}
+		},
+		{
+			"path": "pages/order/activist/activist",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom",
+				// #endif
+				"navigationBarTitleText": "退款"
+			}
+		},
+		{
+			"path": "pages/order/complain/complain",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom"
+				// #endif
+			}
+		},
+
+		//******************支付模块（2）******************
+		{
+			"path": "pages/pay/result/result",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom"
+				// #endif
+			}
+		}
+	],
+	"subPackages": [{
+
+			//******************营销活动模块（26）******************
+			"root": "promotionpages",
+			"pages": [
+
+				//----------组合套餐模块（2）----------
+				{
+					"path": "combo/detail/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "combo/payment/payment",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+				//----------专题活动模块（4）----------
+				{
+					"path": "topics/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "topics/detail/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "topics/goods_detail/goods_detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "topics/payment/payment",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+				//----------秒杀模块（3）----------
+				{
+					"path": "seckill/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "seckill/detail/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "seckill/payment/payment",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+				//----------拼团模块（5）----------
+				{
+					"path": "pintuan/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "pintuan/detail/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "pintuan/my_spell/my_spell",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "pintuan/share/share",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "pintuan/payment/payment",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+				//----------砍价模块（5）----------
+				{
+					"path": "bargain/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "bargain/detail/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "bargain/launch/launch",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "bargain/my_bargain/my_bargain",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "bargain/payment/payment",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+				//----------团购模块（3）----------
+				{
+					"path": "groupbuy/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "groupbuy/detail/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "groupbuy/payment/payment",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+				//----------积分模块（2）----------
+				{
+					"path": "point/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "point/detail/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "point/payment/payment",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "point/order_list/order_list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "point/result/result",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "wholesale/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				}, {
+					"path": "wholesale/detail/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				}, {
+					"path": "wholesale/payment/payment",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				}, {
+					"path": "wholesale/cartList/cartList",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+				//****************** 营销小游戏 ******************
+				{
+					"path": "game/cards/cards",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "game/turntable/turntable",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "game/smash_eggs/smash_eggs",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "game/record/record",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				}
+			]
+		},
+		{
+			//*****************其他模块（26）******************
+			"root": "otherpages",
+			"pages": [
+				//**************************************
+				{
+					"path": "order/refund/refund",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "order/refund_detail/refund_detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "order/evaluate/evaluate",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "index/city/city",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"disableScroll": true
+					}
+				},
+				//******************店铺笔记******************
+				{
+					"path": "store_notes/note_list/note_list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "门店列表"
+					}
+				},
+				{
+					"path": "store_notes/note_detail/note_detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				//******************微页面******************
+				{
+					"path": "diy/diy/diy",
+					"style": {
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": true
+					}
+				},
+				//******************会员模块（20）******************
+				{
+					"path": "member/modify_face/modify_face",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/account/account",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/account_edit/account_edit",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/apply_withdrawal/apply_withdrawal",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/balance/balance",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/balance_detail/balance_detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/collection/collection",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/coupon/coupon",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"disableScroll": true
+					}
+				},
+				{
+					"path": "member/footprint/footprint",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/level/level",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/level/level_growth_rules",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/point/point",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/point_detail/point_detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/signin/signin",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/gift/gift",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/gift_detail/gift_detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/withdrawal/withdrawal",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/withdrawal_detail/withdrawal_detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/address/address",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/address_edit/address_edit",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/cancellation/cancellation",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/assets/assets",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/cancelstatus/cancelstatus",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/cancelsuccess/cancelsuccess",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/cancelrefuse/cancelrefuse",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				//******************登录模块******************
+				{
+					"path": "login/find/find",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": ""
+					}
+				},
+
+				//******************商品模块******************
+				{
+					"path": "goods/preview-video",
+					"style": {
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "goods/brand/brand",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "goods/coupon/coupon",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "goods/coupon_receive/coupon_receive",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "goods/evaluate/evaluate",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "goods/search/search",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+
+				//******************CMS模块（6）******************
+				{
+					"path": "help/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "help/detail/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "notice/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "notice/detail/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+
+				//******************店铺模块（7）******************
+				{
+					"path": "shop/index/index",
+					"style": {
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "shop/introduce/introduce",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "shop/search/search",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "shop/street/street",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "shop/category/category",
+					"style": {
+						"disableScroll": true,
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "shop/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "shop/store_detail/store_detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+				//******************核销模块（4）******************
+				{
+					"path": "verification/index/index",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "verification/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "verification/detail/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+				//******************会员充值（4）******************
+				{
+					"path": "recharge/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "recharge/order_list/order_list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+				//****************** 分销 ******************
+				{
+					"path": "fenxiao/index/index",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/apply/apply",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/order/order",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/order_detail/order_detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/team/team",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/withdraw_apply/withdraw_apply",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/withdraw_list/withdraw_list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/promote_code/promote_code",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/level/level",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/goods_list/goods_list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/follow/follow",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/bill/bill",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+				{
+					"path": "live/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				}, {
+					"path": "chat/room/room",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"softinputMode": "adjustResize"
+					}
+				},
+				{
+					"path": "webview/webview",
+					"style": {}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#F7f7f7",
+		"backgroundColorTop": "#f7f7f7",
+		"backgroundColorBottom": "#f7f7f7"
+	},
+	"tabBar": {
+		// #ifdef H5
+		"custom": true,
+		// #endif
+		"color": "#333",
+		"selectedColor": "#FF0036",
+		"backgroundColor": "#fff",
+		"borderStyle": "white",
+		"list": [{
+				"pagePath": "pages/index/index/index",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/goods/category/category",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/goods/cart/cart",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/member/index/index",
+				"text": "个人中心"
+			}
+		]
+	},
+	"preloadRule": {
+		"pages/index/index/index": {
+			"network": "all",
+			"packages": ["promotionpages", "otherpages"]
+		}
+	}
+}
